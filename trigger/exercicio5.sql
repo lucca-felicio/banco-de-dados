@@ -22,7 +22,6 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 
--- Trigger vinculada
 CREATE TRIGGER trg_processa_reserva
 BEFORE INSERT OR UPDATE ON reservas
 FOR EACH ROW
